@@ -1,0 +1,62 @@
+Project Title: Intuitive Banana
+
+
+API's : Sound Cloud
+        Musics Match
+        Spotify
+        Wikapedia
+        YouTube
+
+Description : Our web application will integrate user input from a form to pull the above 5 api's
+              to populate a user interface, cross referenceing song, lyrics, videos, and wikapedia information.
+
+User Story: As a music enthusiast new or classic music is frustrating, 
+            I want to cross reference videos, music and lyrics together to learn about 
+                new musicians and all related content. 
+            So that I can stay informed about trending or popular new music
+
+            Given I am a music enthusiast
+            When I search for new music, artists or lyrics
+            Then I should receive content specific to my search 
+                in a easily digestable format. 
+
+Wireframe Design : Pages: Home, Featured Artists, Random Genra generator, Search Form
+                   
+                   Home Page: About App
+                              Song of the Day based on selected Genra
+                                    based off of user modal selected genra 
+                                    stored in local stroage
+                              Using Moments.JS select songs of the month/week/quarter/year 
+
+                    Featured Artists Page: 
+                              Carosel Photo page identifying featured artists - Possible random generation
+                              Predecting the Grammies 
+
+                    Random Genra Generator:
+                              Selectable cards with specific genras, which generate song selection 
+                                    based off user selection OR dropdown box - with "other" to send
+                                    to search form 
+
+                    Search Form: 
+                              Mimics the NYC search engine 
+                                    Artists, song title, youtube link with picture
+
+Tasks:  Adam - 
+        JT - 
+        Devante -  
+        Cory - 
+
+
+        
+
+
+                              
+    
+
+
+
+
+                    
+
+
+
