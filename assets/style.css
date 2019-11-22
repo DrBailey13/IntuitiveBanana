@@ -1,0 +1,23 @@
+.hero-head {
+    background-color: #151e3f
+}
+
+.hero-foot {
+    background-color: #151e3f;
+}
+
+.search-color{
+    border-color: #c16e70!important;
+}
+
+.hero-body {
+    background-image: url(audience-1853662_1920.jpg);
+    margin: 0 auto;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%
+}
+
+#title_hp {
+    color: #030027!important;
+}
