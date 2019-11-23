@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Intuitive Banana</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-
+  <link rel="shortcut icon" type="image/png" href="assets/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -22,16 +22,16 @@
           </div>
         </div>
       </nav>
-      </div>
+    </div>
     </div>
 
-    <div class="hero-body">
+    <div class="hero-body" id="heroPicture">
       <div class="container has-text-centered">
         <p class="title" id="title_hp">
           A Music Search Application
         </p>
         <p class="subtitle">
-          Subtitle
+          Search songs, artists or genres, or check out our random song generator based off your favorite genre.
         </p>
       </div>
     </div>
@@ -40,7 +40,7 @@
       <nav class="tabs is-boxed is-fullwidth">
         <div class="container">
           <ul>
-            <li class="is-active">
+            <li>
               <a>
                 Home
               </a>
@@ -51,7 +51,7 @@
             <li>
               <a>Genre</a>
             </li>
-            <li>
+            <li class="is-active">
               <a>Search</a>
             </li>
           </ul>
@@ -73,33 +73,29 @@
       <div class="field">
         <label class="label">Username</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-success search-color" type="text" placeholder="Text input">
+          <input class="input search-color" type="text" placeholder="Text input">
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
         </div>
-        <p class="help is-success search-color"></p>
+
       </div>
 
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger search-color" type="email" placeholder="Email input">
+          <input class="input search-color" type="email" placeholder="Email input">
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
         </div>
-        <p class="help is-danger search-color"></p>
       </div>
 
       <div class="field">
         <label class="label">Subject</label>
         <div class="control">
-          <div class="select search-color">
-            <select>
+          <div class="select">
+            <select class="search-color">
               <option>Select dropdown</option>
               <option>With options</option>
             </select>
@@ -146,6 +142,8 @@
       </div>
     </div>
   </section>
+  <br>
+  <br>
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </body>
 

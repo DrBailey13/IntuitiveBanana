@@ -10,7 +10,7 @@
     border-color: #c16e70!important;
 }
 
-.hero-body {
+#heroPicture {
     background-image: url(audience-1853662_1920.jpg);
     margin: 0 auto;
     background-position: center;
@@ -20,4 +20,26 @@
 
 #title_hp {
     color: #030027!important;
+}
+
+#ticketMaster {
+    background-color: #c16e70!important;
+
+}
+
+#songOTD {
+    background-color: #151e3f!important;
+}
+
+#featuredArtists {
+    background-color: #e7e7c7;
+    color: #030027;
+}
+
+#grammyPredictions {
+    background-color: #c16e70;
+}
+
+#trendingSong {
+    background-color: #030027;
 }
