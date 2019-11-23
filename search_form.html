@@ -8,141 +8,112 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="shortcut icon" type="image/png" href="assets/images/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/design/style.css">
-</head>
-
-<body>
-  <section class="hero is-info is-large">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container has-text-centered">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="home_page.html">
-              <h1 class="title">Intuitive Banana</h1>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <div class="hero-body" id="heroPicture">
-      <div class="container has-text-centered">
-        <p class="title" id="title_hp">
-          A Music Search Application
-        </p>
-        <p class="subtitle">
-          Search songs, artists or genres, or check out our random song generator based off your favorite genre.
-        </p>
-      </div>
-    </div>
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="home_page.html">
-                Home
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intuitive Banana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/pink-banana-favicon.png">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  
+  <body>
+    <section class="hero is-info is-large">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container has-text-centered">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <h1 class="title">Intuitive Banana</h1>
               </a>
-            </li>
-            <li>
-              <a href="featured_artists.html">Featured Artists</a>
-            </li>
-            <li>
-              <a href="genre.html"> Genre</a>
-            </li>
-            <li>
-              <a href="search_form.html">Search</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </section>
-  <br>
-  <br>
-  <section>
-    <div class="container">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input search-color" type="text" placeholder="Text input">
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
+  
+      <div class="hero-body" id="heroPicture">
+        <div class="container has-text-centered">
+          <p class="title" id="title_hp">
+            A Music Search Application
+          </p>
+          <p class="subtitle">
+            Search songs, artists or genres, or check out our random song generator based off your favorite genre.
+          </p>
         </div>
       </div>
-
-      <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input search-color" type="text" placeholder="Text input">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-
+  
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li>
+                <a>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a>Featured Artists</a>
+              </li>
+              <li>
+                <a>Genre</a>
+              </li>
+              <li class="is-active">
+                <a>Search</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input search-color" type="email" placeholder="Email input">
-          <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Subject</label>
-        <div class="control">
-          <div class="select">
-            <select class="search-color">
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
+    </section>
+    <br>
+    <br>
+    <section>
+      <div class="container">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input search-color" type="text" placeholder="Artist Name" id="artistName">
           </div>
         </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea search-color" placeholder="Textarea"></textarea>
+  
+   
+  
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submitBtn">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light" id="cancelBtn">Cancel</button>
+          </div>
         </div>
+          <!-- <div class="top10"></div>
+          <div class="info"></div>   -->
+          <section>
+              <div class="tile is-parent is-12">
+                <article class="tile is-child box notification">
+                  <p class="title" id="nameArtist"></p>
+                  <p class="subtitle" id="artistLink"></p>
+                  <div class="content">
+                    <p class="top10"></p>
+                    <p class="info"></p>
+                  </div>
+                </article>
+              </div>
+            </section>
       </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            I agree to the <a href="#">terms and conditions</a>
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="radio">
-            <input type="radio" name="question">
-            Yes
-          </label>
-          <label class="radio">
-            <input type="radio" name="question">
-            No
-          </label>
-        </div>
-      </div>
-
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-  <br>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-</body>
-
-</html>
+    </section>
+    
+    <br>
+    <br>
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+  
+  </html>
