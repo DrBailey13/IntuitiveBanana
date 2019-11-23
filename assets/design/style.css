@@ -7,6 +7,14 @@
     background-color: #151e3f;
     color: #d3d0cb;
 }
+.genreSelector{
+    cursor: pointer;
+}
+
+li a:hover {
+    background-color: #030027!important;
+    color: #fcdd56!important;
+  }  
 
 .search-color{
     border-color: #c16e70!important;
@@ -27,9 +35,8 @@
 }
 
 #ticketMaster {
-    background-color: #c16e70!important;
+    background-color: #fcdd56!important;
     color: #363636;
-
 }
 
 #songOTD {
@@ -38,16 +45,16 @@
 }
 
 #featuredArtists {
+    background-color: #030027;
+    color: #d3d0cb!important;
+}
+
+#grammyPredictions {
     background-color: #fcdd56;
     color: #363636
 }
 
-#grammyPredictions {
-    background-color: #c16e70;
-    color: #363636
-}
-
 #trendingSong {
-    background-color: #030027;
+    background-color: #151e3f;
     color: #d3d0cb;
 }
