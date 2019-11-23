@@ -1,0 +1,53 @@
+.hero-head {
+    background-color: #151e3f;
+    color: #d3d0cb;
+}
+
+.hero-foot {
+    background-color: #151e3f;
+    color: #d3d0cb;
+}
+
+.search-color{
+    border-color: #c16e70!important;
+    color: #363636;
+}
+
+#heroPicture {
+    background-image: url(audience-1853662_1920.jpg);
+    margin: 0 auto;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%
+}
+
+#title_hp {
+    color: #030027!important;
+    color: #d3d0cb;
+}
+
+#ticketMaster {
+    background-color: #c16e70!important;
+    color: #363636;
+
+}
+
+#songOTD {
+    background-color: #151e3f!important;
+    color: #d3d0cb;
+}
+
+#featuredArtists {
+    background-color: #fcdd56;
+    color: #363636
+}
+
+#grammyPredictions {
+    background-color: #c16e70;
+    color: #363636
+}
+
+#trendingSong {
+    background-color: #030027;
+    color: #d3d0cb;
+}
