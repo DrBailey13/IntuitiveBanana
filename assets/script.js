@@ -58,3 +58,25 @@ $("#cancelBtn").on("click", function (event) {
     $("#nameArtist").empty()
     $("#artistLink").empty()
 })
+
+function featuredArtist(){
+
+    var queryURL = "https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
+
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        console.log(response)
+
+        var artistName = $("<h1>").text(response.trending[1].strArtist)
+        $(".Artist").append(artistName)
+
+        var artistImage = $("<img>").attr("src", response.trending[1].strTrackThumb)
+        $(".image").append(artistImage)
+
+        
+    })
+}featuredArtist()
+
