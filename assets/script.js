@@ -64,6 +64,27 @@ $("#cancelBtn").on("click", function (event) {
     $("#artistLink").empty()
 })
 
+function featuredArtist(){
+
+    var queryURL = "https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
+
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function (response) {
+        console.log(response)
+
+        var artistName = $("<h1>").text(response.trending[1].strArtist)
+        $(".Artist").append(artistName)
+
+        var artistImage = $("<img>").attr("src", response.trending[1].strTrackThumb)
+        $(".image").append(artistImage)
+
+        
+    })
+}featuredArtist()
+
 
 var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=7&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
 
