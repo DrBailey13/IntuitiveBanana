@@ -58,3 +58,13 @@ li a:hover {
     background-color: #151e3f;
     color: #d3d0cb;
 }
+
+#title{
+    text-shadow: 4px 3px #1C2735
+}
+
+.has-bg-img{ 
+    background-image: url("assets/images/background-banana-blue-close-up-616839.jpg") ;
+
+
+}
