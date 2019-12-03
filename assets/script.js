@@ -86,7 +86,7 @@ function featuredArtist(){
 }featuredArtist()
 
 
-var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=7&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
+var queryURL = "https://cors-anywhere.herokuapp.com/https://app.ticketmaster.com/discovery/v2/events.json?size=7&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
 
 
 function displayEvents() {
