@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Intuitive Banana</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="shortcut icon" type="image/png" href="assets/images/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/design/style.css">
 </head>
@@ -14,6 +14,9 @@
   <section class="hero is-info is-large">
     <div class="hero-head">
       <nav class="navbar">
+        <div class="navebar-brand">
+
+        </div>
         <div class="container has-text-centered">
           <div class="navbar-brand">
             <a class="navbar-item" href="home_page.html">
@@ -63,104 +66,113 @@
     <div class="tile is-parent is-12">
       <article class="tile is-child box notification">
         <p class="title has-text-centered">Select your your favorite genre.</p>
-        <p class="subtitle has-text-centered">Selecting you favorite genre will pull up the most up-to-date musica news.</p>
-        </div>
+        <p class="subtitle has-text-centered">Selecting you favorite genre will pull up the most up-to-date music news.
+        </p>
       </article>
     </div>
   </section>
-  <br>
   <section>
     <div class="tile is-ancestor genreSelector" id="toYellow">
-        <div class="tile is-parent">
-          <article class="tile is-child box notification is-dark music" data-genre="hip+hop+rap">
-            <p class="title has-text-centered">Hip-Hop/Rap</p>
-            <p class="subtitle">Find Hip-hop and Rap related articles</p>
-          </article>
-        </div>
-        <div class="tile is-parent genreSelector" id="toDark">
-          <article class="tile is-child box notification is-warning music" data-genre="pop+music">
-            <p class="title">Pop</p>
-            <p class="subtitle">Randomly Generate Pop Music</p>
-          </article>
-        </div>
-        <div class="tile is-parent genreSelector" id="toYellow">
-          <article class="tile is-child box notification is-dark music" data-genre="Rock+music">
-            <p class="title">Rock</p>
-            <p class="subtitle">Randomly Generate Rock Music</p>
-            <div class="content">
-              <p></p>
-            </div>
-          </article>
-        </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box notification is-dark music" data-genre="hip+hop+rap">
+          <p class="title has-text-centered">Hip-Hop/Rap</p>
+          <p class="subtitle has-text-centered">Find Hip-hop and Rap related articles</p>
+        </article>
       </div>
+      <div class="tile is-parent genreSelector" id="toDark">
+        <article class="tile is-child box notification is-warning music" data-genre="pop+music">
+          <p class="title has-text-centered">Pop</p>
+          <p class="subtitle has-text-centered">Randomly Generate Pop Music</p>
+        </article>
+      </div>
+      <div class="tile is-parent genreSelector" id="toYellow">
+        <article class="tile is-child box notification is-dark music" data-genre="Rock+music">
+          <p class="title has-text-centered">Rock</p>
+          <p class="subtitle has-text-centered">Randomly Generate Rock Music</p>
+        </article>
+      </div>
+    </div>
   </section>
   <br>
   <section>
     <div class="tile is-ancestor genreSelector" id="toDark">
-        <div class="tile is-parent">
-          <article class="tile is-child box notification is-warning music" data-genre="rhythm&blues+music">
-            <p class="title">R&B</p>
-            <p class="subtitle">Randomly Generate R&B Music</p>
-          </article>
-        </div>
-        <br>
-        <div class="tile is-parent genreSelector" id="toYellow">
-          <article class="tile is-child box notification is-dark music" data-genre="latin+music">
-            <p class="title ">Latin</p>
-            <p class="subtitle">Randomly Generate Latin Music</p>
-          </article>
-        </div>
-        <div class="tile is-parent genreSelector" id="toDark">
-          <article class="tile is-child box notification is-warning music" data-genre="country+music">
-            <p class="title">Country</p>
-            <p class="subtitle">Randomly Generate Country Music</p>
-            <div class="content">
-              <p></p>
-            </div>
-          </article>
-        </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box notification is-warning music" data-genre="rhythm&blues+music">
+          <p class="title has-text-centered">R&B</p>
+          <p class="subtitle has-text-centered">Randomly Generate R&B Music</p>
+        </article>
       </div>
+      <div class="tile is-parent genreSelector" id="toYellow">
+        <article class="tile is-child box notification is-dark music" data-genre="latin+music">
+          <p class="title has-text-centered">Latin</p>
+          <p class="subtitle has-text-centered">Randomly Generate Latin Music</p>
+        </article>
+      </div>
+      <div class="tile is-parent genreSelector" id="toDark">
+        <article class="tile is-child box notification is-warning music" data-genre="country+music">
+          <p class="title has-text-centered">Country</p>
+          <p class="subtitle has-text-centered">Randomly Generate Country Music</p>
+        </article>
+      </div>
+    </div>
   </section>
   <br>
   <section>
     <div class="tile is-ancestor genreSelector" id="toYellow">
-        <div class="tile is-parent" id="genreSelector">
-          <article class="tile is-child box notification is-dark music" data-genre="electronic+music">
-            <p class="title">EDM</p>
-            <p class="subtitle">Randomly Generate EDM Music</p>
-          </article>
-        </div>
-        <br>
-        <div class="tile is-parent genreSelector" id="toDark">
-          <article class="tile is-child box notification is-warning music" data-genre="jazz">
-            <p class="title">Jazz</p>
-            <p class="subtitle">Randomly Generate Jazz Music</p>
-          </article>
-        </div>
-        <div class="tile is-parent genreSelector" id="toYellow">
-          <article class="tile is-child box notification is-dark music" data-genre="raggae">
-            <p class="title">Reggae</p>
-            <p class="subtitle">Randomly Generate Reggae Music</p>
-            <div class="content">
-              <p></p>
-            </div>
-          </article>
-        </div>
+      <div class="tile is-parent" id="genreSelector">
+        <article class="tile is-child box notification is-dark music" data-genre="electronic+music">
+          <p class="title has-text-centered">EDM</p>
+          <p class="subtitle has-text-centered">Randomly Generate EDM Music</p>
+        </article>
       </div>
-  </section>
-  <section>
-    <div class="tile is-parent is-12">
-      <article class="tile is-child box notification" id="displayObject">
-        <p class="title" id="displayTitle"></p>
-        <p class="subtitle" id="displaySub"></p>
-        <div class="content" >
-          <p id="displayNews"></p>
-          <a id="displayURL" target="_blank">
-          </a>
-        </div>
-      </article>
+      <div class="tile is-parent genreSelector" id="toDark">
+        <article class="tile is-child box notification is-warning music" data-genre="jazz">
+          <p class="title has-text-centered">Jazz</p>
+          <p class="subtitle has-text-centered">Randomly Generate Jazz Music</p>
+        </article>
+      </div>
+      <div class="tile is-parent genreSelector" id="toYellow">
+        <article class="tile is-child box notification is-dark music" data-genre="raggae">
+          <p class="title has-text-centered">Reggae</p>
+          <p class="subtitle has-text-centered">Randomly Generate Reggae Music</p>
+        </article>
+      </div>
     </div>
   </section>
+  <br>
+  <section>
+    <div class="modal" id="newsDisplay">
+      <div class="modal-background close-modal"></div>
+      <div class="modal-content">
+        <section>
+          <div class="tile is-parent is-12 tileBackground">
+            <article class="tile is-child" id="displayObject">
+              <p class="title has-text-centered" id="displayTitle"></p>
+              <p class="subtitle has-text-centered" id="displaySub"></p>
+              <div class="content has-text-centered">
+                <p id="displayNews"></p>
+                <a id="displayURL" target="_blank">
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent is-12 tileBackground">
+            <article class="tile is-child" id="displayObject2">
+              <p class="title has-text-centered" id="displayTitle2"></p>
+              <p class="subtitle has-text-centered" id="displaySub2"></p>
+              <div class="content has-text-centered">
+                <p id="displayNews2"></p>
+                <a id="displayURL2" target="_blank">
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <button class="modal-close is-large close-modal" aria-label="close"></button>
+    </div> 
+</section>
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/design/music-news.js"></script>
