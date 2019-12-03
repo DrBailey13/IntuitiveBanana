@@ -86,11 +86,11 @@ function featuredArtist(){
 }featuredArtist()
 
 
-var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?size=7&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
+
 
 
 function displayEvents() {
-
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://app.ticketmaster.com/discovery/v2/events.json?size=2&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
     $.ajax({
         url: queryURL,
         type: "GET"
@@ -108,11 +108,18 @@ function displayEvents() {
 
             // var artistDisplay = $("<h2>").text(response._embedded.events[i].name);
             // var pictureDisplay = $("<img>").attr("src", response._embedded.events[i].images[1].url).addClass("image is-96x96");
+            var dateDisplay = response._embedded.events[i].dates.start.localDate;
+            var timeDisplay = response._embedded.events[i].dates.start.localTime;
+            // dateDisplay = moment().format('ddd, MMMM Do, hA');
             var pictureDisplay = $("<img>").attr("src", response._embedded.events[i].images[1].url).css("width", "96px").css("float", "left").css("clear", "both").css("margin-bottom", "10px");
             // console.log(response._embedded.events[i].images[1].url);
             var linkDisplay = $("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name);
 
-            $(".appendInfo").append(pictureDisplay, linkDisplay);
+
+            // $(".appendInfo").append(pictureDisplay, '<br>' , dateDisplay, timeDisplay , '<br>' , linkDisplay);
+            $(".appendInfo").append('<div id="block-' + i + '"');
+            
+            $('#block-' + i + '').append(linkDisplay, pictureDisplay);
             
         }
     });
