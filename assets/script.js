@@ -116,10 +116,10 @@ function displayEvents() {
             var linkDisplay = $("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name);
 
 
-            // $(".appendInfo").append(pictureDisplay, '<br>' , dateDisplay, timeDisplay , '<br>' , linkDisplay);
-            $(".appendInfo").append('<div id="block-' + i + '"');
+            $(".appendInfo").append(pictureDisplay, '<br>' , dateDisplay, timeDisplay , '<br>' , linkDisplay);
+            // $(".appendInfo").append('<div id="block-' + i + '"');
             
-            $('#block-' + i + '').append(linkDisplay, pictureDisplay);
+            // $('#block-' + i + '').append(linkDisplay, pictureDisplay);
             
         }
     });
