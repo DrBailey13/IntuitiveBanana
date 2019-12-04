@@ -54,6 +54,7 @@ Home Page ++++++++++++++++++++++++++++++++++
 
 Featured Artist Page +++++++++++++++++++++++
 ![Featured_Artist](assets/images/featured_artist/featured_artist1.png)
+![Featured_Artist](assets/images/featured_artist/featured_artist2.png)
 
 Search +++++++++++++++++++++++++++++++++++++
 ![Search](assets/images/search/search1.png)
