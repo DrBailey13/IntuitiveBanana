@@ -19,7 +19,7 @@ DeVante Baily, Javier Turner, Adam Wenger, and Cory Marshman.
 Other contributers: UNCC TA's
 
 Audio DB : https://www.theaudiodb.com 
-Ticket Master : https://www.ticketmaster.com
+Ticketmaster : https://www.ticketmaster.com
 New York Times : https://www.nytimes.com
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -32,6 +32,14 @@ Page URL:
 
 Github Repo: https://github.com/DrBailey13/IntuitiveBanana/tree/master
 
+Search Criteria : 
+    Users are liked to artist's website and to https://www.youtube.com/
+
+API's from : 
+    Audio DB : https://www.theaudiodb.com/api_guide.php
+    Ticketmaster : https://developer.ticketmaster.com/
+    New York Times : https://developer.nytimes.com/
+
 ## Images
 
 Favicon +++++++++++++++++++++++++++++++++++++
@@ -41,17 +49,21 @@ Logo ++++++++++++++++++++++++++++++++++++++++
 ![Logo](assets/images/intuitive_banana.png)
 
 Home Page ++++++++++++++++++++++++++++++++++
-![Home_Page1](assets/images/home_page1.png)
-![Home_Page2](assets/images/home_page2.png)
+![Home_Page1](assets/images/home_page/home_page1.png)
+![Home_Page2](assets/images/home_page/home_page2.png)
 
 Featured Artist Page +++++++++++++++++++++++
+![Featured_Artist](assets/images/featured_artist/featured_artist1.png)
 
 Search +++++++++++++++++++++++++++++++++++++
+![Search](assets/images/search/search1.png)
+![Search](assets/images/search/search2.png)
+![Search](assets/images/search/search3.png)
 
 Music-News +++++++++++++++++++++++++++++++++
-![Music-News](assets/images/music_news1.png)
-![Music-News](assets/images/music_news2.png)
-![Music-News](assets/images/music_news3.png)
+![Music-News](assets/images/music_news/music_news1.png)
+![Music-News](assets/images/music_news/music_news2.png)
+![Music-News](assets/images/music_news/music_news3.png)
 
 
 ## License
