@@ -8,107 +8,100 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="shortcut icon" type="image/png" href="assets/images/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/design/style.css">
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Intuitive Banana</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <link rel="shortcut icon" type="image/png" href="assets/pink-banana-favicon.png">
-    <link rel="stylesheet" href="assets/style.css">
-  </head>
-
-<body>
-  <section class="hero is-info is-large">
-    <div class="hero-head">
-      <nav class="navbar">
+</head>
+  
+  <body>
+    <section class="hero is-info is-large">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container has-text-centered">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <h1 class="title"><img id="bananaLogo"src="assets/images/intuitive_banana.png" alt="Banana">Intuitive Banana</h1>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
+  
+      <div class="hero-body" id="heroPicture">
         <div class="container has-text-centered">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-              <h1 class="title">Intuitive Banana</h1>
-            </a>
+          <p class="title" id="title">
+            A Music Search Application
+          </p>
+          
+        </div>
+      </div>
+  
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li>
+                <a href="home_page.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="featured_artists.html">Featured Artists</a>
+              </li>
+              <li>
+                <a href="music-news.html">Music News</a>
+              </li>
+              <li class="is-active">
+                <a href="#">Search</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section>
+      <div class="container">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input search-color" type="text" placeholder="Artist Name" id="artistName">
           </div>
         </div>
-      </nav>
-    </div>
-    </div>
-
-    <div class="hero-body" id="heroPicture">
-      <div class="container has-text-centered">
-        <p class="title" id="title_hp">
-          A Music Search Application
-        </p>
-        <p class="subtitle">
-          Search songs, artists or genres, or check out our random song generator based off your favorite genre.
-        </p>
-      </div>
-    </div>
-
-    <div class="hero-foot">
-      <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="home_page.html">Home</a>
-            </li>
-            <li>
-              <a href="featured_artists.html">Featured Artists</a>
-            </li>
-            <li>
-              <a href="music-news.html">Music News</a>
-            </li>
-            <li>
-              <a href="search_form.html">Search</a>
-            </li>
-          </ul>
+  
+   
+  
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submitBtn">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light" id="cancelBtn">Cancel</button>
+          </div>
         </div>
-      </nav>
-    </div>
-  </section>
-  <br>
-  <br>
-  <section>
-    <div class="container">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input search-color" type="text" placeholder="Artist Name" id="artistName">
-        </div>
-      </div>
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link" id="submitBtn">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light" id="cancelBtn">Cancel</button>
-        </div>
-      </div>
-      <!-- <div class="top10"></div>
+          <!-- <div class="top10"></div>
           <div class="info"></div>   -->
-      <section>
-        <div class="tile is-parent is-12">
-          <article class="tile is-child box notification">
-            <p class="title" id="nameArtist"></p>
-            <p class="subtitle" id="artistLink"></p>
-            <div class="content">
-              <p class="top10"></p>
-              <p class="info"></p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-  </section>
-
-  <br>
-  <br>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./assets/script.js"></script>
-</body>
-
-</html>
+          <section>
+              <div class="tile is-parent is-12">
+                <article class="tile is-child box notification">
+                  <p class="title" id="nameArtist" target="_blank"></p>
+                  <p class="subtitle" id="artistLink" target="_blank"></p>
+                  <div class="content">
+                    <a class="top10" target="_blank"></a>
+                    <a class="info" target="_blank"></a>
+                  </div>
+                </article>
+              </div>
+            </section>
+      </div>
+    </section>
+    
+    <br>
+    <br>
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+  
+  </html>
