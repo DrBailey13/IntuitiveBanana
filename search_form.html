@@ -8,33 +8,31 @@
   <link rel="shortcut icon" type="image/png" href="assets/images/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/design/style.css">
 </head>
-
 <body>
   <section class="hero is-info is-large">
     <div class="hero-head">
       <nav class="navbar">
+        <div class="navebar-brand">
+
+        </div>
         <div class="container has-text-centered">
           <div class="navbar-brand">
-            <a class="navbar-item"  href="index.html">
-              <h1 class="title">Intuitive Banana</h1>
+            <a class="navbar-item" href="index.html">
+              <h1 class="title"> <img id="bananaLogo"src="assets/images/intuitive_banana.png" alt="Banana">Intuitive Banana</h1>
             </a>
           </div>
         </div>
       </nav>
     </div>
-    </div>
 
     <div class="hero-body" id="heroPicture">
       <div class="container has-text-centered">
-        <p class="title" id="title_hp">
+        <p class="title" id="title">
           A Music Search Application
         </p>
-        <p class="subtitle">
-          Search songs, artists or genres, or check out our random song generator based off your favorite genre.
-        </p>
+        
       </div>
     </div>
-
     <div class="hero-foot">
       <nav class="tabs is-boxed is-fullwidth">
         <div class="container">
@@ -70,34 +68,35 @@
         <div class="control">
           <button class="button is-link" id="submitBtn">Submit</button>
         </div>
-        <div class="control">
-          <button class="button is-link is-light" id="cancelBtn">Cancel</button>
-        </div>
       </div>
       <!-- <div class="top10"></div>
           <div class="info"></div>   -->
       <section>
-        <div class="tile is-parent is-12">
-          <article class="tile is-child box notification">
-            <p class="title" id="nameArtist"></p>
-            <p class="subtitle" id="artistLink"></p>
-            <div class="content">
-              <p class="top10"></p>
-              <p class="info"></p>
-            </div>
-          </article>
+        <div class="modal" id="musicDisplay">
+          <div class="modal-background close-modal"></div>
+          <div class="modal-content">
+            <section>
+              <div class="tile is-parent is-12">
+                <article class="tile is-child box notification">
+                  <p class="title" id="nameArtist"></p>
+                  <p class="subtitle" id="artistLink"></p>
+                  <div class="content">
+                    <p class="info"></p>
+                  </div>
+                  <div class="picture"></div>
+                </article>
+              </div>
+            </section>
+          </div>
+          <button class="modal-close is-large close-modal" aria-label="close"></button>
         </div>
       </section>
     </div>
   </section>
-
   <br>
   <br>
-
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/script.js"></script>
 </body>
-
 </html>
+

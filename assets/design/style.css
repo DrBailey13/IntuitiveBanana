@@ -1,3 +1,4 @@
+
 .hero-head {
     background-color: #151e3f;
     color: #d3d0cb;
@@ -59,12 +60,36 @@ li a:hover {
     color: #d3d0cb!important;
 }
 
-#grammyPredictions {
-    background-color: #fcdd56;
-    color: #363636
+#title{
+    text-shadow: 4px 3px #1C2735
 }
 
-#trendingSong {
-    background-color: #151e3f;
-    color: #d3d0cb;
+.has-bg-img{ 
+    background-image: url("assets/images/background-banana-blue-close-up-616839.jpg") ;
+
+
 }
+
+.tileBackground {
+    background-color: #d3d0cb;
+    opacity: 95%;
+    border-radius: 20px;
+}
+
+.modal-background {
+    opacity: 10%;
+}
+
+
+
+.picture {
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+
+.content {
+    float: left;
+}
+
+
