@@ -120,7 +120,7 @@ function displayEvents() {
             // $(".appendInfo").append('<div id="block-' + i + '"');
             
             // $('#block-' + i + '').append(linkDisplay, pictureDisplay);
-            
+            // hey
         }
     });
 }
