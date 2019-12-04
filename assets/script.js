@@ -112,17 +112,28 @@ function displayEvents() {
 
             // var artistDisplay = $("<h2>").text(response._embedded.events[i].name);
             // var pictureDisplay = $("<img>").attr("src", response._embedded.events[i].images[1].url).addClass("image is-96x96");
-            // var dateDisplay = response._embedded.events[i].dates.start.localDate;
+            var dateDisplay = response._embedded.events[i].dates.start.localDate;
+            var d = new Date(dateDisplay).toDateString();
+            var showDate = $("<div>").append($(d).css("float", "right"));
+            console.log(d);
             // var timeDisplay = response._embedded.events[i].dates.start.localTime;
             // dateDisplay = moment().format('ddd, MMMM Do, hA');
-            var pictureDisplay = $("<div>").append($("<img>").attr("src", response._embedded.events[i].images[5].url).css("width", "96px").css("clear", "both").css("margin-bottom", "10px").css("display", "inline-block").css("margin-right", "10px"));
+            var pictureDisplay = $("<div>").append($("<img>").attr("src", response._embedded.events[i].images[5].url).attr("id", "pictures").css("width", "96px").css("clear", "both").css("margin-bottom", "10px").css("display", "inline-block").css("margin-right", "10px"));
             // console.log(response._embedded.events[i].images[1].url);
-            var linkDisplay = $("<div>").append($("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name).css("display", "flex").css("align-items", "center").attr("target", "_blank"));
+            var linkDisplay = $("<div>").append($("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name).css("display", "flex").css("align-items", "center").css("word-wrap", "break-word").css("width", "300px").attr("target", "_blank"));
             
 
-            var newDiv = $("<div>").attr("id", "music-block" + i).css("display", "flex"); 
+            var newDiv = $("<div>").attr("id", "music-block" + i).css("display", "flex").css("padding", "1px"); 
             //id="block-' + i + '"');
             // $(".appendInfo").append(pictureDisplay, '<br>' , dateDisplay, timeDisplay , '<br>' , linkDisplay);
+            $(".appendInfo").append(newDiv);
+            
+            $(newDiv).append(pictureDisplay, linkDisplay, showDate);
+
+            //TO DO
+                //showDate align
+                //resize images based on screen size
+            
         }
     });
 }
