@@ -122,7 +122,10 @@ function displayEvents() {
             $(".appendInfo").append(newDiv);
             
             $(newDiv).append(pictureDisplay, linkDisplay);
+
             
+            // $('#block-' + i + '').append(linkDisplay, pictureDisplay);
+            // hey
         }
     });
 }
