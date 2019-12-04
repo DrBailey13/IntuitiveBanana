@@ -22,8 +22,18 @@ li a:hover {
     color: #363636;
 }
 
+.tileBackground {
+    background-color: #d3d0cb ;
+    opacity: 95%;
+    border-radius: 20px;
+}
+
+.modal-background {
+    opacity: 10%;
+}
+
 #heroPicture {
-    background-image: url(audience-1853662_1920.jpg);
+    background-image: url(audience.jpg);
     margin: 0 auto;
     background-position: center;
     background-attachment: fixed;
