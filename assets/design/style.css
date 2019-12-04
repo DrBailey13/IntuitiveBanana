@@ -1,3 +1,4 @@
+
 .hero-head {
     background-color: #151e3f;
     color: #d3d0cb;
@@ -49,16 +50,6 @@ li a:hover {
     color: #d3d0cb!important;
 }
 
-#grammyPredictions {
-    background-color: #fcdd56;
-    color: #363636
-}
-
-#trendingSong {
-    background-color: #151e3f;
-    color: #d3d0cb;
-}
-
 #title{
     text-shadow: 4px 3px #1C2735
 }
@@ -68,3 +59,14 @@ li a:hover {
 
 
 }
+
+.tileBackground {
+    background-color: #d3d0cb;
+    opacity: 95%;
+    border-radius: 20px;
+}
+
+.modal-background {
+    opacity: 10%;
+}
+

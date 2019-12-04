@@ -1,5 +1,5 @@
 function artistPage(artistName) {
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
+    var queryURL = "http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
 
     $.ajax({
         url: queryURL,
@@ -22,7 +22,7 @@ function artistPage(artistName) {
 
 
 function searchArtists(artistName) {
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
+    var queryURL = "http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
     console.log(queryURL)
 
 
@@ -86,11 +86,11 @@ function featuredArtist(){
 }featuredArtist()
 
 
-var queryURL = "https://cors-anywhere.herokuapp.com/https://app.ticketmaster.com/discovery/v2/events.json?size=7&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
+
 
 
 function displayEvents() {
-
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://app.ticketmaster.com/discovery/v2/events.json?size=2&apikey=vDemJOWclNALrcIpSY84LPmStIgNjopr&city=Charlotte&classificationName=music&genre=pop";
     $.ajax({
         url: queryURL,
         type: "GET"
@@ -108,12 +108,19 @@ function displayEvents() {
 
             // var artistDisplay = $("<h2>").text(response._embedded.events[i].name);
             // var pictureDisplay = $("<img>").attr("src", response._embedded.events[i].images[1].url).addClass("image is-96x96");
+            var dateDisplay = response._embedded.events[i].dates.start.localDate;
+            var timeDisplay = response._embedded.events[i].dates.start.localTime;
+            // dateDisplay = moment().format('ddd, MMMM Do, hA');
             var pictureDisplay = $("<img>").attr("src", response._embedded.events[i].images[1].url).css("width", "96px").css("float", "left").css("clear", "both").css("margin-bottom", "10px");
             // console.log(response._embedded.events[i].images[1].url);
             var linkDisplay = $("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name);
 
-            $(".appendInfo").append(pictureDisplay, linkDisplay);
+
+            $(".appendInfo").append(pictureDisplay, '<br>' , dateDisplay, timeDisplay , '<br>' , linkDisplay);
+            // $(".appendInfo").append('<div id="block-' + i + '"');
             
+            // $('#block-' + i + '').append(linkDisplay, pictureDisplay);
+            // hey
         }
     });
 }
@@ -158,31 +165,3 @@ function trendingSongs(trending) {
 
 }
 trendingSongs()
-
-
-
-$(".music").on("click",function() {
-    var genre = $(this).attr("data-genre");
-    console.log(genre)
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + genre + "&api-key=R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M"
-    $.ajax ({
-        url: queryURL,
-        method: "GET"
-    }).then(function (response){
-        console.log(response)
-        $("#displayTitle").text("");
-        $("#displaySub").text("");
-        $("#displayNews").text("");
-        $("#displayTitle").text(response.response.docs[0].headline.main);
-        $("#displaySub").text(response.response.docs[0].snippet);
-        $("#displayNews").text(response.response.docs[0].lead_paragraph);
-        $("#displayURL").attr("href", response.response.docs[0].web_url).text(response.response.docs[0].web_url);
-        $("#displayTitle2").text("");
-        $("#displaySub2").text("");
-        $("#displayNews2").text("");
-        $("#displayTitle2").text(response.response.docs[1].headline.main);
-        $("#displaySub2").text(response.response.docs[1].snippet);
-        $("#displayNews2").text(response.response.docs[1].lead_paragraph);
-        $("#displayURL2").attr("href", response.response.docs[1].web_url).text(response.response.docs[1].web_url);
-    })
-});
