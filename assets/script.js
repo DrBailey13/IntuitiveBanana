@@ -1,5 +1,5 @@
 function artistPage(artistName) {
-    var queryURL = "http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
 
     $.ajax({
         url: queryURL,
@@ -27,7 +27,7 @@ function artistPage(artistName) {
 
 
 function searchArtists(artistName) {
-    var queryURL = "http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
     console.log(queryURL)
 
 
@@ -70,7 +70,7 @@ var modal = $("#musicDisplay")
 
 function featuredArtist() {
 
-    var queryURL = "https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
 
 
     $.ajax({
@@ -116,6 +116,7 @@ function displayEvents() {
             var d = new Date(dateDisplay).toDateString();
             var showDate = $("<div>").append($(d).css("float", "right"));
             console.log(d);
+            console.log(showDate);
             // var timeDisplay = response._embedded.events[i].dates.start.localTime;
             // dateDisplay = moment().format('ddd, MMMM Do, hA');
             var pictureDisplay = $("<div>").append($("<img>").attr("src", response._embedded.events[i].images[5].url).attr("id", "pictures").css("width", "96px").css("clear", "both").css("margin-bottom", "10px").css("display", "inline-block").css("margin-right", "10px"));
@@ -159,7 +160,7 @@ $("#submitBtn").on("click", function (event) {
 
 function trendingSongs(trending) {
 
-    var queryURL = "http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
 
 
     $.ajax({
