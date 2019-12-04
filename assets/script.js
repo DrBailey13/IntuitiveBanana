@@ -116,6 +116,7 @@ function displayEvents() {
             var d = new Date(dateDisplay).toDateString();
             var showDate = $("<div>").append($(d).css("float", "right"));
             console.log(d);
+            console.log(showDate);
             // var timeDisplay = response._embedded.events[i].dates.start.localTime;
             // dateDisplay = moment().format('ddd, MMMM Do, hA');
             var pictureDisplay = $("<div>").append($("<img>").attr("src", response._embedded.events[i].images[5].url).attr("id", "pictures").css("width", "96px").css("clear", "both").css("margin-bottom", "10px").css("display", "inline-block").css("margin-right", "10px"));
