@@ -1,5 +1,5 @@
 function artistPage(artistName) {
-    var queryURL = "http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
 
     $.ajax({
         url: queryURL,
@@ -27,7 +27,7 @@ function artistPage(artistName) {
 
 
 function searchArtists(artistName) {
-    var queryURL = "http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/track-top10.php?s=" + artistName + ""
     console.log(queryURL)
 
 
@@ -70,7 +70,7 @@ var modal = $("#musicDisplay")
 
 function featuredArtist() {
 
-    var queryURL = "https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
 
 
     $.ajax({
@@ -159,7 +159,7 @@ $("#submitBtn").on("click", function (event) {
 
 function trendingSongs(trending) {
 
-    var queryURL = "http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
 
 
     $.ajax({
