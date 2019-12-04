@@ -70,3 +70,16 @@ li a:hover {
     opacity: 10%;
 }
 
+
+
+.picture {
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+
+.content {
+    float: left;
+}
+
+
