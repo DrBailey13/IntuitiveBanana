@@ -58,3 +58,14 @@ li a:hover {
     background-color: #151e3f;
     color: #d3d0cb;
 }
+
+.picture {
+    height: 300px;
+    width: 500px;
+    float: left;
+}
+
+.content {
+    float: left;
+}
+
