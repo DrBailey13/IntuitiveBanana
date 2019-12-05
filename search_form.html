@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Intuitive Banana</title>
+  <!-- linking style sheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="shortcut icon" type="image/png" href="assets/images/pink-banana-favicon.png">
   <link rel="stylesheet" href="assets/design/style.css">
 </head>
 <body>
+  <!-- styling for logo -->
   <section class="hero is-info is-large">
     <div class="hero-head">
       <nav class="navbar">
@@ -25,6 +27,8 @@
       </nav>
     </div>
 
+    <!-- main picutre with styling -->
+
     <div class="hero-body" id="heroPicture">
       <div class="container has-text-centered">
         <p class="title" id="title">
@@ -33,19 +37,24 @@
         
       </div>
     </div>
+    <!-- tabs to link to other pages -->
     <div class="hero-foot">
       <nav class="tabs is-boxed is-fullwidth">
         <div class="container">
           <ul>
+            <!-- home tab -->
             <li>
               <a href="index.html">Home</a>
             </li>
+            <!-- featured artists page -->
             <li>
               <a href="featured_artists.html">Featured Artists</a>
             </li>
+            <!-- music news page  -->
             <li>
               <a href="music-news.html">Music News</a>
             </li>
+            <!-- search page aka the page we are on  -->
             <li>
               <a href="search_form.html">Search</a>
             </li>
@@ -56,21 +65,24 @@
   </section>
   <br>
   <br>
+  <!-- main section to search for artists songs -->
   <section>
     <div class="container">
+      <!-- promting that a name is what we want to be put in there -->
       <div class="field">
         <label class="label">Name</label>
+        <!-- text area box that the user will put the name into -->
         <div class="control">
           <input class="input search-color" type="text" placeholder="Artist Name" id="artistName">
         </div>
       </div>
+      <!-- submit button that will load information -->
       <div class="field is-grouped">
         <div class="control">
           <button class="button is-link" id="submitBtn">Submit</button>
         </div>
       </div>
-      <!-- <div class="top10"></div>
-          <div class="info"></div>   -->
+    <!-- modal that will diaplay info on artist -->
       <section>
         <div class="modal" id="musicDisplay">
           <div class="modal-background close-modal"></div>
@@ -78,11 +90,15 @@
             <section>
               <div class="tile is-parent is-12">
                 <article class="tile is-child box notification">
+                  <!-- name of artist -->
                   <p class="title" id="nameArtist"></p>
+                  <!-- link to artist page -->
                   <p class="subtitle" id="artistLink"></p>
+                  <!-- top songs by artist -->
                   <div class="content">
                     <p class="info"></p>
                   </div>
+                  <!-- picture of artist -->
                   <div class="picture"></div>
                 </article>
               </div>
@@ -95,6 +111,7 @@
   </section>
   <br>
   <br>
+  <!-- link to js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/script.js"></script>
 </body>
