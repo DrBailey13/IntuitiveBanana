@@ -1,45 +1,37 @@
 Project Title: Intuitive Banana
 
 
-API's : Sound Cloud
-        Musics Match
-        Spotify
-        Wikipedia
-        YouTube
+API's :     TicketMaster
+            AudioDB
+            New York Times
 
-Description : Our web application will integrate user input from a form to pull the above 5 api's
-              to populate a user interface, cross referencing song, lyrics, videos, and Wikipedia information.
+Description : Our web application will integrate user input from a form to pull the above 3 APIs
+              to populate a user interface, cross referencing song, artist information, and upcoming events.
 
 User Story: As a music enthusiast new or classic music is frustrating, 
-            I want to cross reference videos, music and lyrics together to learn about 
+            I want to cross reference videos, music and upcoming events together to learn about 
                 new musicians and all related content. 
             So that I can stay informed about trending or popular new music
 
             Given I am a music enthusiast
-            When I search for new music, artists or lyrics
-            Then I should receive content specific to my search 
+            When I search for new music or artists
+            I should receive content specific to my search 
                 in an easily digestible format. 
 
-Wireframe Design : Pages: Home, Featured Artists, Random Genre generator, Search Form
+Wireframe Design : 
+      Pages: Home, Featured Artists, Music News, and Search Form
                    
-                   Home Page: About App
-                              Song of the Day based on selected Genre
-                                    based off of user modal selected genre 
-                                    stored in local storage
-                              Using Moments.JS select songs of the month/week/quarter/year 
+                  Home Page: About App
+                               
+                  Featured Artists Page: 
+                              Image identifying featured artists
 
-                    Featured Artists Page: 
-                              Carousel Photo page identifying featured artists - Possible random generation
-                              Predicting the Grammies 
+                  Music News:
+                              Selectable cards with specific genres, which displays artist news
 
-                    Random Genre Generator:
-                              Selectable cards with specific genres, which generate song selection 
-                                    based off user selection OR dropdown box - with "other" to send
-                                    to search form 
-
-                    Search Form: 
+                  Search Form: 
                               Mimics the NYC search engine 
-                                    Artists, song title, youtube link with picture
+                              Artists, song title, youtube link with picture
 
 Tasks:  Adam - 
         JT - 
