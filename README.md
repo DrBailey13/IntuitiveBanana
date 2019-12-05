@@ -19,7 +19,9 @@ DeVante Baily, Javier Turner, Adam Wenger, and Cory Marshman.
 Other contributers: UNCC TA's
 
 Audio DB : https://www.theaudiodb.com 
+
 Ticketmaster : https://www.ticketmaster.com
+
 New York Times : https://www.nytimes.com
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -33,11 +35,15 @@ Page URL:
 Github Repo: https://github.com/DrBailey13/IntuitiveBanana/tree/master
 
 Search Criteria : 
+
     Users are liked to artist's website and to https://www.youtube.com/
 
 API's from : 
+
     Audio DB : https://www.theaudiodb.com/api_guide.php
+
     Ticketmaster : https://developer.ticketmaster.com/
+
     New York Times : https://developer.nytimes.com/
 
 ## Images
