@@ -1,7 +1,9 @@
 // search page function for basic info
 function artistPage(artistName) {
     var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/195003/search.php?s=" + artistName + ""
+
 // calling api
+
     $.ajax({
         url: queryURL,
         method: "GET",
@@ -82,6 +84,7 @@ function featuredArtist() {
 
     var queryURL = "https://cors-anywhere.herokuapp.com/https://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles&country=us&type=itunes&format=singles"
 
+
 // calling api
     $.ajax({
         url: queryURL,
@@ -127,7 +130,13 @@ function displayEvents() {
             var d = new Date(dateDisplay).toDateString();
             var showDate = $("<div>").append($(d).css("float", "right"));
             console.log(d);
+
             // grabbing picture and appending to a div
+
+            console.log(showDate);
+            // var timeDisplay = response._embedded.events[i].dates.start.localTime;
+            // dateDisplay = moment().format('ddd, MMMM Do, hA');
+
             var pictureDisplay = $("<div>").append($("<img>").attr("src", response._embedded.events[i].images[5].url).attr("id", "pictures").css("width", "96px").css("clear", "both").css("margin-bottom", "10px").css("display", "inline-block").css("margin-right", "10px"));
         //    giving the title a link
             var linkDisplay = $("<div>").append($("<a>").attr("href", response._embedded.events[i].url).text(response._embedded.events[i].name).css("display", "flex").css("align-items", "center").css("word-wrap", "break-word").css("width", "300px").attr("target", "_blank"));
@@ -164,7 +173,7 @@ $("#submitBtn").on("click", function (event) {
 // featured artist page trending songs sections function
 function trendingSongs(trending) {
 
-    var queryURL = "http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://theaudiodb.com/api/v1/json/1/trending.php?country=us&type=itunes&format=singles"
 
 // calling api
     $.ajax({
